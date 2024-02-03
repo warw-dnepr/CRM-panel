@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>to be</title>
+   <!-- <link rel="shortcut icon" href="img/logo-bear.jpg" type="image/jpg"> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="less/style.css">
+</head>
+
+<body>
+   <div class="wraper">
+      <header>
+         <div class="header">
+            <div class="header-ind"><a href="index.html">Головна <i class="fa-solid fa-house"></i></a></div>
+            <div class="header-info">
+               <div class="header-name-user">Name User</div>
+               <div class="header-img"><img src="" alt=""></div>
+               <div class="header-log"><i class="fa-solid fa-unlock-keyhole"></i></div>
+               <div class="log-out"><a href="login.html">Log out</a></div>
+
+            </div>
+         </div>
+      </header>
+      <main>
+         <div class="new-worker-main">
+            <h6>Впишіть дані</h6>
+            <form method="POST" enctype="multipart/form-data">
+               <div class="edit-data-master">
+                  <p>
+                     <span class='width'>Ім'я майстра </span>
+                     <span class="edit-data-master-span"><i class="fa-solid fa-pen-to-square master-i"></i><input
+                           placeholder="Впишіть ім'я" class="name-master edit-input" name="name" value="" require />
+                     </span>
+                  </p>
+                  <p class="edit-data-master-span-img">
+                     <span class='width'>Фото майстра </span>
+                     <span class="edit-data-master-span edit-data-master-span-in"><label for="file"><i
+                              class="fa-solid fa-pen-to-square change-foto"></i></label><input placeholder="" id="file"
+                           name="pictures" type="file"><img id="pre_i" type="hidden" src=""></span>
+                  </p>
+                  <p>
+                     <span class='width'>Контакт майстра </span>
+                     <span class="edit-data-master-span"><i class="fa-solid fa-pen-to-square"></i><input
+                           placeholder="Впишіть контакт" id="userPhone" class="edit-input" name="contact" value=""
+                           require /></span>
+                  </p>
+                  <p>
+                     <span class='width'>Адреса майстра </span>
+                     <span class="edit-data-master-span"><i class="fa-solid fa-pen-to-square"></i><input
+                           placeholder="Впишіть адрес" class="edit-input" name="addres" value="" require /></span>
+                  </p>
+                  <p>
+                     <span class='width'>E-mail майстра </span>
+                     <span class="edit-data-master-span"><i class="fa-solid fa-pen-to-square"></i><input
+                           placeholder="Впишіть email" class="edit-input" name="email" value="" require /></span>
+                  </p>
+
+                  <p>
+                     <span class='width'>Паспорт майстра </span>
+                     <span class="edit-data-master-span"><i class="fa-solid fa-pen-to-square"></i><input
+                           placeholder="Впишіть номер паспорту" class="edit-input" name="documents" value=""
+                           require /></span>
+                  </p>
+                  <p>
+                     <span class='width'>ІПН майстра </span>
+                     <span class="edit-data-master-span"><i class="fa-solid fa-pen-to-square"></i><input
+                           placeholder="Впишіть номер ІПН" type="number" class="edit-input" name="ipn" value=""
+                           require /></span>
+                  </p>
+                  <p>
+                     <span class='width'>Працює від </span>
+                     <span class="edit-data-master-span"><i class="fa-solid fa-pen-to-square"></i><input
+                           placeholder="Впишіть дату початку роботи" class="edit-input" id="mydata" maxlength="10"
+                           name="start_work" value="" require /></span>
+                  </p>
+               </div>
+               <div class="new-worker-btn">
+                  <div class="service-edit-div">
+                     <a href="index.html" class="" id="dont-save">
+                        Відмінити <i class="a fa-solid fa-xmark"></i></a>
+                  </div>
+                  <div class="edit-data-master-button">
+                     <button class="edit-button" name="add_new_user" type="submit">Зберегти зміни</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+
+      </main>
+      <footer>
+         <div class="footer">
+            <p class="client-info"><a href="#">To Be</a></p>
+            <p class="develop-info">Developed by: <a href="#"><img src="img/logo.jpg" alt="Web Island Studio"></a><a
+                  href="#">Web Island Studio</a></p>
+         </div>
+      </footer>
+   </div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   <script src="js/all.js"></script>
+   <script src="js/app.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
+   <script>
+      $(document).ready(function () {
+         $("#userPhone").mask("+38( 999 ) 999-99-99");
+      });
+
+   </script>
+</body>
+
+</html>
